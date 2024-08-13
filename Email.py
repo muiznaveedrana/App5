@@ -7,4 +7,4 @@ with st.form(key = "form"):
     button = st.form_submit_button()
     if button:
         main.func(reciever)
-        st.info("Email Sent!")
+        st.info("Signed Up!")
