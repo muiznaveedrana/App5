@@ -1,5 +1,5 @@
 import smtplib, ssl
-def send_email(message, reciever):
+def send_email(message, reciever = "muiznaveedrana@gmail.com"):
     host = "smtp.gmail.com"
     port = 465
     username = "littlecoders10@gmail.com"
