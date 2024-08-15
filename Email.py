@@ -9,9 +9,9 @@ with st.form(key="form"):
 
     if button:
         if receiver:  # Ensure that an email was entered
-            main.func()
             with open("email.txt", "a") as file:  # Use append mode to avoid overwriting
                 file.write(receiver + "\n")
+            main.func()
             st.info("Signed Up!")
         else:
             st.warning("Please enter a valid email address.")
